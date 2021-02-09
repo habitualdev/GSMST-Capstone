@@ -1,0 +1,26 @@
+Brief
+- Situation - Many companies and businesses have been compromised from supply chain poisoned software from Solarwinds
+- Mission - At this time, it is neccesary to create an easy to deploy appliance to detect any indicators of Sunburst (the hack of Solarwinds)
+- Execution - Using the provided dev space and VM's, create a small appliance that uses snort to detect network traffic indicative of Sunburst
+- Administration - I am available for any questions and guidance on building this product
+- Communication - Expect immediate feedback during the business day. Within a couple hours outside of that
+
+Signatures
+-https://github.com/fireeye/sunburst_countermeasures
+
+Tools
+ - snort
+ - splunk
+ - Splunk Universal Forwarder
+ - Linux distro of choice (I reccomend centos)
+
+ Timeline
+ - Phase 1: Research and Understand. Know what snort is, and how its rules are written
+    + A simple rule builder is call snorpy (https://github.com/chrisjd20/Snorpy)
+    + Read documentation on how to install and configure snort (Focus on version 2.X. If you feel confident, use Snort3)
+ - Phase 2: Initial Build
+    + Choose your base operating system
+    + Install and configure snort to detect traffic based on rules
+ - Phase 3: Exporting Data
+    + Using the Splunk universalforwarder, export data to a splunk index
+    + Meaningfully display the data in a manner non-technical persons can understand
